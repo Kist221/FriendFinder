@@ -1,0 +1,31 @@
+{
+  "name": "friendfinder",
+  "version": "2.2.1",
+  "description": "Make fake friends that don't like to cuddle.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kist221/FriendFinder.git"
+  },
+  "keywords": [
+    "fake",
+    "node",
+    "express",
+    "npm",
+    "js",
+    "javascript",
+    "html",
+    "css",
+    "heroku"
+  ],
+  "author": "Kist221",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kist221/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/Kist221/FriendFinder#readme"
+}
