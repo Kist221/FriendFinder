@@ -1,5 +1,6 @@
 // LOAD DATA
 var friends = require("../data/friends.js");
+var compare = require("../data/fun.js");
 
 // ROUTING
 module.exports = function(app) {
@@ -10,7 +11,10 @@ module.exports = function(app) {
 
   // API POST Requests
   app.post("/api/friends", function(req, res) {
-    console.log(req.body.scores);
+    // console.log(req.body.scores);
+
+    compare(req.body.scores, friends);
+
     friends.push(req.body);
         // res.json(match);
   });
