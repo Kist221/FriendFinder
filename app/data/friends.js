@@ -2,7 +2,7 @@
 var friendsArray = [
 	{
 	name:"Steve",
-	photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+	photo:"https://www.wired.com/images_blogs/business/2011/08/steve_jobs.jpg",
 	scores:["1", "1", "1", "1", "1", "4", "4", "4", "4", "3"]
 	}
 ];

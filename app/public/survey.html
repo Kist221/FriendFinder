@@ -14,12 +14,24 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/dstyle.css">
 </head>
 
 <body>
 
 <div class="container">
-	
+		
+		<!-- MODAL FOR WINNER -->
+	<div id="winnerModal" class="modal">
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <h3>Your Match: </h3>
+	    <h4 id="winnerMessage"></h4>
+	    <img src="" id="winnerPic">
+	  </div>
+	</div>
+
 	<div class="jumbotron">
 		
 		<h1 class="display-4"><i class="fa fa-group" aria-hidden="true"></i> FriendFinder</h1>
