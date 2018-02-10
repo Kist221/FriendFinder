@@ -9,14 +9,9 @@ module.exports = function(app) {
   });
 
   // API POST Requests
-  app.post("/api/new", function(req, res) {
-    if (true) {
-      console.log(req.body);
-      friends.push(req.body);
-      res.json(true);
-    }
-    else {
-      res.json(false);
-    }
+  app.post("/api/friends", function(req, res) {
+    console.log(req.body.scores);
+    friends.push(req.body);
+        // res.json(match);
   });
 };

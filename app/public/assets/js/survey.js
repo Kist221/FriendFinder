@@ -19,13 +19,8 @@ $("#uidSubmit").on("click", function(event) {
 
   console.log(newFriend);
   
-  $.post("/api/new", newFriend, function(data) {
-      if (data) {
-        alert("Yay!");
-      }
-      else {
-        alert("Sorry");
-      }
+  $.post("/api/friends", newFriend, function(data) {
+      alert(data);
       // clear form
       $("#uidName").val("");
       $("#uidPhoto").val("");
