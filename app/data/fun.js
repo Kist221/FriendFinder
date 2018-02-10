@@ -15,8 +15,7 @@ function loop(mine, friends) {
 	}
 	// add up values in array
 	total = diffs.reduce((a,b) => a+b, 0);
-	console.log(diffs);
-	console.log(total);
+	return total;
 }
 
 var compare = function (mine, friends) {
@@ -27,9 +26,13 @@ var compare = function (mine, friends) {
 	for (var i = 0; i < friends.length; i++) {
 		// convert current comparison to numbers
 		var scores = friends[i].scores.map(Number);
-		loop(myScores, scores);
+		// run loop function & push into score tracker
+		trackMatch.push(loop(myScores, scores));
 	}
-
+	// store the winner!
+	var winner = trackMatch.reduce((a, b) => Math.min(a, b));
+	// return the index of the winner
+	return trackMatch.indexOf(winner);
 }
 
 

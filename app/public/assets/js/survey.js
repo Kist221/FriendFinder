@@ -17,8 +17,7 @@ $("#uidSubmit").on("click", function(event) {
     scores: scores
   };
 
-  console.log(newFriend);
-  
+  // Post data and return the winner
   $.post("/api/friends", newFriend, function(data) {
       alert(data);
       // clear form

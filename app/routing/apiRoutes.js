@@ -11,11 +11,11 @@ module.exports = function(app) {
 
   // API POST Requests
   app.post("/api/friends", function(req, res) {
-    // console.log(req.body.scores);
-
-    compare(req.body.scores, friends);
-
+    // store results of comparing function
+    var match = compare(req.body.scores, friends);
+    // push new friend into DB
     friends.push(req.body);
-        // res.json(match);
+    // send back the winner
+    res.json(friends[match]);
   });
 };
