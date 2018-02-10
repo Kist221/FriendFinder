@@ -24,3 +24,8 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+#winnerPic {
+    margin: 0 auto;
+    width: 200px;
+}
